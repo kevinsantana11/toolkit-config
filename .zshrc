@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH="/Users/ksantana/.local/bin:/Users/ksantana/.local/scripts:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/snowcrash/.local/config/oh-my-zsh"
+export ZSH="/Users/ksantana/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -96,11 +96,16 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias zshconfig="vim ~/.zshrc"
-alias vimconfig="vim ~/.vimrc"
-alias tmuxconfig="vim ~/.tmux.conf"
-alias config="~/.local/config"
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
+alias tmuxconfig="vim ~/.tmux.conf"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias beepapi="~/Desktop/Development/beep/beep-api-proxy"
+alias dev="~/Desktop/Development"
+alias beep="~/Desktop/Development/beep"
+alias bdip="~/Desktop/Development/beep/bdip"
+
+# added by travis gem
+[ ! -s /Users/ksantana/.travis/travis.sh ] || source /Users/ksantana/.travis/travis.sh
