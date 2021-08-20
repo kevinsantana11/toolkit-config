@@ -97,15 +97,16 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# Aliases
+alias activate="source ./__venv/bin/activate"
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
 alias tmuxconfig="vim ~/.tmux.conf"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias beepapi="~/Desktop/Development/beep/beep-api-proxy"
-alias dev="~/Desktop/Development"
-alias beep="~/Desktop/Development/beep"
-alias bdip="~/Desktop/Development/beep/bdip"
+alias sources="~/Desktop/sources"
+alias beepapi="~/Desktop/dev/beep/beep-api-proxy"
+alias dev="~/Desktop/dev"
+alias beep="~/Desktop/dev/beep"
+alias bdip="~/Desktop/dev/beep/bdip"
 
 # added by travis gem
 [ ! -s /Users/ksantana/.travis/travis.sh ] || source /Users/ksantana/.travis/travis.sh

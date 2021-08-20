@@ -1,0 +1,26 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "git.autofetch": true,
+    "editor.tabSize": 8,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "debug.onTaskErrors": "abort",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "explorer.confirmDelete": false,
+    "projectManager.git.baseFolders": [
+        "~/Desktop/dev/beep/bdip"
+    ],
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.iconTheme": "material-icon-theme",
+    "sync.gist": "9b4a9175ce1817ff2f97932ff7eb24e4"
+}
