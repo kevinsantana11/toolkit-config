@@ -1,9 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/Users/ksantana/.local/bin:/Users/ksantana/.local/scripts:$PATH"
+export PATH="/home/kevin/.local/bin:/home/kevin/.local/scripts:$PATH"
+export PATH="/home/kevin/.cargo/bin$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ksantana/.oh-my-zsh"
+export ZSH="/home/kevin/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,11 +103,3 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
 alias tmuxconfig="vim ~/.tmux.conf"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias beepapi="~/Desktop/Development/beep/beep-api-proxy"
-alias dev="~/Desktop/Development"
-alias beep="~/Desktop/Development/beep"
-alias bdip="~/Desktop/Development/beep/bdip"
-
-# added by travis gem
-[ ! -s /Users/ksantana/.travis/travis.sh ] || source /Users/ksantana/.travis/travis.sh
