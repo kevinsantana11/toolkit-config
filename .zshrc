@@ -109,4 +109,4 @@ alias beep="~/Desktop/dev/beep"
 alias bdip="~/Desktop/dev/beep/bdip"
 
 # added by travis gem
-[ ! -s /Users/ksantana/.travis/travis.sh ] || source /Users/ksantana/.travis/travis.sh
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
