@@ -1,13 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/home/ksantana/.local/bin:/home/kevin/.local/scripts:$PATH"
-export PATH="/home/ksantana/.cargo/bin:$PATH"
-export PATH="/home/ksantana/go/bin:$PATH"
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@11/bin:$PATH"
-export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk@11"
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@12/bin:$PATH"
-
+#
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ksantana/.oh-my-zsh"
 
@@ -104,6 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
-alias tmuxconfig="vim ~/.tmux.conf"
+# alias zshconfig="vim ~/.zshrc"
+# alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
+# alias tmuxconfig="vim ~/.tmux.conf"
