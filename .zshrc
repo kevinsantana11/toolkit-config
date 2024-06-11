@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH="/home/ksantana/.local/bin:/home/kevin/.local/scripts:$PATH"
+DOOM_EMACS_HOME=$HOME/.config/emacs
+PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH="/home/ksantana/.local/bin:/home/kevin/.local/scripts:$PATH"
+export PATH=$DOOM_EMACS_HOME/bin:$PATH
 #
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ksantana/.oh-my-zsh"
@@ -9,6 +11,7 @@ export ZSH="/home/ksantana/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME_GIT_SHOW_UPSTREAM=1
 ZSH_THEME="afowler"
 
 # Set list of themes to pick from when loading at random
@@ -101,3 +104,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="vim ~/.zshrc"
 # alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
 # alias tmuxconfig="vim ~/.tmux.conf"
+alias ls="exa"
+alias cat="batcat"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/ksantana/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/ksantana/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ksantana/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/ksantana/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
