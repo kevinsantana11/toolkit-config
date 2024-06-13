@@ -5,8 +5,6 @@
 
 (package-initialize)
 
-(defun package--save-selected-packages (&rest opt) nil)
-
 (define-minor-mode ksantana-modus-theme
   "Kevin S. style theme"
   :init-value nil
@@ -36,7 +34,7 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;;General Configuration
+;; General Configuration
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (tooltip-mode -1)
@@ -90,6 +88,8 @@
 
 (use-package restart-emacs)
 
+(use-package format-all)
+
 (use-package helpful
     :config
     (global-set-key (kbd "C-h f") #'helpful-callable)
@@ -111,6 +111,9 @@
   (python-mode . (lambda ()
 		   (require 'lsp-pyright)
 		   (lsp))))
+(use-package lsp-java
+  :config
+  (add-hook 'java-mode-hook 'lsp))
 
 (use-package lsp-ui)
 
@@ -119,3 +122,5 @@
   (add-hook
      mode
      (lambda () (display-line-numbers-mode 0))))
+
+(defun package--save-selected-packages (&rest opt) nil)
