@@ -5,6 +5,8 @@
 
 (package-initialize)
 
+(defun package--save-selected-packages (&rest opt) nil)
+
 (define-minor-mode ksantana-modus-theme
   "Kevin S. style theme"
   :init-value nil
@@ -34,7 +36,7 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;; General Configuration
+;;General Configuration
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (tooltip-mode -1)
@@ -86,9 +88,18 @@
 
 (use-package vterm)
 
-(use-package restart-emacs)
+(use-package treemacs)
 
-(use-package format-all)
+(use-package treemacs-evil
+  :after (treemacs evil))
+
+(use-package treemacs-projectile
+  :after (treemacs projectile))
+
+(use-package treemacs-icons-dired
+  :hook (dired-mode . treemacs-icons-dired-enable-once))
+
+(use-package restart-emacs)
 
 (use-package helpful
     :config
@@ -111,9 +122,6 @@
   (python-mode . (lambda ()
 		   (require 'lsp-pyright)
 		   (lsp))))
-(use-package lsp-java
-  :config
-  (add-hook 'java-mode-hook 'lsp))
 
 (use-package lsp-ui)
 
@@ -122,5 +130,3 @@
   (add-hook
      mode
      (lambda () (display-line-numbers-mode 0))))
-
-(defun package--save-selected-packages (&rest opt) nil)
