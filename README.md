@@ -12,3 +12,7 @@ easy to place on new machines.
 * Alacritty configuration
 * Keyboard mappin
 * Emacs configuration
+
+### Plans for Improvement
+* Generalize all configurations and separate machine specific configurations into separate branches
+* Create automated script that created all necessary soft links

@@ -23,7 +23,6 @@
     ],
     "extensions.ignoreRecommendations": true,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "workbench.colorTheme": "GitHub Dark Dimmed",
     "diffEditor.ignoreTrimWhitespace": false,
     "git.autofetch": true,
     "window.zoomLevel": 1,
