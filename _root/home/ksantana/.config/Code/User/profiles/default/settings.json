@@ -1,0 +1,35 @@
+{
+    "haskell.manageHLS": "GHCup",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.indentSize": "tabSize",
+        "editor.tabSize": 2
+    },
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+    "editor.rulers": [
+
+        {
+            "color": "#3b3b3b3b",
+            "column": 120,
+        },
+        {
+            "color": "#3b3b3b3b",
+            "column": 80
+        }
+    ],
+    "extensions.ignoreRecommendations": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.autofetch": true,
+    "window.zoomLevel": 1,
+    "editor.codeActionsOnSave": {
+    
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.fontFamily": "'IBM Plex Mono'"
+}
