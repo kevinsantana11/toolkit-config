@@ -14,5 +14,6 @@ easy to place on new machines.
 * Emacs configuration
 
 ### Plans for Improvement
+* We will likely see issues with fonts where IBM Plex Mono or Fire Code fonts aren't installed.
 * Generalize all configurations and separate machine specific configurations into separate branches
 * Create automated script that created all necessary soft links

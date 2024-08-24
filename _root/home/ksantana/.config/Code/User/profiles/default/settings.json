@@ -30,5 +30,6 @@
     
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "editor.fontFamily": "'IBM Plex Mono'"
+    "editor.fontFamily": "'IBM Plex Mono'",
+    "git.confirmSync": false
 }
