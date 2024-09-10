@@ -1,10 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 PATH=$HOME/bin:/usr/local/bin:$PATH
-PATH="/home/ksantana/.local/bin:/home/kevin/.local/scripts:$PATH"
-PATH="/usr/local/texlive/2024/bin/x86_64-linux:$PATH"
+PATH="/home/$USER/.local/bin:/home/$USER/.local/scripts:$PATH"
 #
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ksantana/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -103,22 +102,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="vim ~/.zshrc"
 # alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
 # alias tmuxconfig="vim ~/.tmux.conf"
-alias ls="exa"
-alias cat="batcat"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-_conda_setup="$('/home/ksantana/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-   eval "$__conda_setup"
-   if [ -f "/home/ksantana/miniconda3/etc/profile.d/conda.sh" ]; then
-       . "/home/ksantana/miniconda3/etc/profile.d/conda.sh"
-   else
-       export PATH="/home/ksantana/miniconda3/bin:$PATH"
-   fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# Below is for MISE
-eval "$(~/.local/bin/mise activate zsh)"
